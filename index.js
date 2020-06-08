@@ -38,6 +38,7 @@ DragSlide.prototype.bindEvent = function(){
             that.slideFont.innerText = "验证成功"; /* 文案变动 */
             that.slideFont.style.color = "#fff"; 
             that.slider.style.fontSize = '20px';
+            that.slider.style.cursor = 'initial';
             that.slider.innerHTML = "✅"
             document.removeEventListener('mousemove', that.onMove);
             that.slider.removeEventListener('mousedown', that.onmouseDown);
